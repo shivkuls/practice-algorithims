@@ -20,10 +20,10 @@ public class FactorialBigNum {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
         Scanner sc = new Scanner(System.in);
         BigInteger n = sc.nextBigInteger();
-        BigInteger result=BigInteger.ONE;;
+        BigInteger result = BigInteger.ONE;
         if(n==BigInteger.ZERO){System.out.println(BigInteger.ONE);}
         else {
-            for(BigInteger i = n; !i.equals(BigInteger.ZERO);i.subtract(BigInteger.ONE)){
+            for(BigInteger i = n; !i.equals(BigInteger.ZERO); i.subtract(BigInteger.ONE)){
                 result=result.multiply(i);
             }
         } 
